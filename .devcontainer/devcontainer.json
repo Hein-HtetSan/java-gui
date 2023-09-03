@@ -1,5 +1,16 @@
 {
+  "name": "Java GUI Codespace",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-  }
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "redhat.java",
+    "visualstudioexptteam.vscodeintellicode"
+  ],
+  "settings": {
+    "java.home": "/usr/local/openjdk-11",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.debug.settings.console": "internalConsole"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "git clone https://github.com/Hein-HtetSan/java-gui.git && cd java-gui && mvn clean install"
 }

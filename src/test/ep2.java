@@ -17,7 +17,7 @@ public class ep2 extends JFrame {
         container.setBackground(Color.BLUE); // set the content pane bg to blue
 
         JButton okButton = new JButton("Ok"); // create button obj
-        container.setLayout(null); // i think this is for absolute positioning
+        container.setLayout(null); // i think that : we are not using any layout on ContentPane
         okButton.setBounds(70, 125, 80, 30); // customize as you wish
         container.add(okButton); // set the button onto content pane
 

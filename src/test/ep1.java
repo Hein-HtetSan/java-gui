@@ -1,6 +1,6 @@
 
 import javax.swing.*;
-import java.awt.*;
+// import java.awt.*;
 
 // testing JFrame as a subclass by extending it
 

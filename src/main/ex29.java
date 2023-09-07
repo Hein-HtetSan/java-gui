@@ -13,8 +13,9 @@ public class ex29 extends JFrame implements ActionListener{
     Container contentPane;
     JLabel label1, label2;
     JButton detail;
-    JList cus_list;
+    JList<Customer> cus_list;
     Scanner scn = new Scanner(System.in);
+    JScrollPane scrollPane;
 
     // constructor
     public ex29(){
@@ -50,14 +51,22 @@ public class ex29 extends JFrame implements ActionListener{
 
         contentPane = getContentPane();
         contentPane.setLayout(null);
+        cus_list = new JList<Customer>();
+        scrollPane = new JScrollPane(cus_list);
 
         label1 = new JLabel("Customer List");
         label1.setBounds(50, 50, 100, 30);
         label2 = new JLabel("Detailed information on a selected customer");
         label2.setBounds(430, 200, 300, 30);
+        scrollPane.setBounds(50, 100, 200, 200);
+
+        for(Customer c : customer){
+            // here
+        }
 
         contentPane.add(label1);
         contentPane.add(label2);
+        contentPane.add(scrollPane);
     }
 
     // override methods

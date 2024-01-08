@@ -1,10 +1,1 @@
-{
-  "name": "Java GUI Codespace",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/itsmechlark/features/1password:1": {}
-  },
-  "extensions": [
-    "vscjava.vscode-java-pack"
-  ]
-}
+
